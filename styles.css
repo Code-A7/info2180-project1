@@ -1,0 +1,247 @@
+/* Add your CSS to this file */
+/* ===============================
+   GLOBAL STYLES
+=================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: #2d3748;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+/* ===============================
+   HEADER
+=================================*/
+header {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #5A67D8;
+}
+
+/* ===============================
+   HERO SECTION
+=================================*/
+.overview-hero {
+  background-color: #E2E8F0;
+  padding: 50px 0;
+}
+
+.overview-hero .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.overview-hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.overview-hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   LEARN ABOUT (3-COLUMN GRID)
+=================================*/
+.learn-about {
+  padding: 60px 0;
+}
+
+.learn-about h2 {
+  font-size: 24px;
+  color: #48BB78;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #E2E8F0;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  color: #48BB78;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   COVID TESTING SECTION
+=================================*/
+.testing {
+  background-color: #4A5568;
+  color: white;
+  padding: 60px 0;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.testing h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.testing .btn {
+    background-color: #48BB78;
+    padding: 12px 26px;   /* INCREASED */
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;  /* FIXES TEXT WRAPPING */
+    display: inline-block; /* PREVENT SQUEEZING */
+}
+
+/* ===============================
+   STORIES SECTION
+=================================*/
+.stories {
+  padding: 60px 0;
+}
+
+.stories h2 {
+  color: #5A67D8;
+  margin-bottom: 30px;
+}
+
+.stories article {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stories img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.article-body h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.article-body a {
+  color: #5A67D8;
+  text-decoration: none;
+}
+.article-body a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   NEWSLETTER SECTION
+=================================*/
+.newsletter {
+  background-color: #48BB78;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.newsletter input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 5px;
+  border: none;
+}
+
+.newsletter .btn {
+  background-color: #5A67D8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+footer {
+  background-color: #4A5568;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
